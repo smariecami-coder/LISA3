@@ -1,0 +1,68 @@
+<div class="music-player">
+
+<h2>🎵 MUSIC SYSTEM</h2>
+
+<input type="file" id="musicFile" accept="audio/*">
+
+<br><br>
+
+<audio id="player" controls></audio>
+
+<p id="musicName">Nenhuma música selecionada</p>
+
+</div>
+
+
+<style>
+
+.music-player{
+    background:#050505;
+    border:2px solid #00ff88;
+    color:#00ff88;
+    padding:20px;
+    border-radius:10px;
+    font-family:Consolas, monospace;
+    text-align:center;
+    max-width:400px;
+    margin:auto;
+    box-shadow:0 0 15px #00ff88;
+}
+
+input{
+    color:#00ff88;
+}
+
+audio{
+    width:100%;
+}
+
+
+</style>
+
+
+<script>
+
+const fileInput = document.getElementById("musicFile");
+const player = document.getElementById("player");
+const musicName = document.getElementById("musicName");
+
+
+fileInput.addEventListener("change", function(){
+
+    let file = this.files[0];
+
+    if(file){
+
+        let url = URL.createObjectURL(file);
+
+        player.src = url;
+
+        musicName.innerHTML = "▶ " + file.name;
+
+        player.play();
+
+    }
+
+});
+
+</script>

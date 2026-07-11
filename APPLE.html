@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DOOM SYSTEM</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#000;
+    color:#00ff88;
+    font-family:Consolas, monospace;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.system{
+    width:100%;
+    max-width:900px;
+    background:#050505;
+    border:2px solid #00ff88;
+    padding:20px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+pre{
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    font-size:18px;
+    line-height:1.6;
+}
+
+a{
+    color:#00ffff;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#fff;
+}
+
+@media(max-width:600px){
+    body{
+        padding:10px;
+    }
+
+    .system{
+        padding:15px;
+        border-radius:5px;
+    }
+
+    pre{
+        font-size:13px;
+    }
+}
+
+@media(min-width:601px) and (max-width:900px){
+    pre{
+        font-size:16px;
+    }
+
+}
+
+.radio-player{
+    background:#050505;
+    border:2px solid #00ff88;
+    padding:20px;
+    width:90%;
+    max-width:400px;
+    border-radius:15px;
+    box-shadow:0 0 20px #00ff88;
+    text-align:center;
+    margin:auto;
+}
+
+.radio-title{
+    color:#00ff88;
+    font-family:Consolas, monospace;
+    font-size:22px;
+    margin-bottom:15px;
+    letter-spacing:3px;
+}
+
+audio{
+    width:100%;
+}
+
+@media (max-width:480px){
+
+    .radio-player{
+        padding:15px;
+    }
+
+    .radio-title{
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="system">
+
+<pre>
+
+
+<img
+    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhvd2p1bWZkMXhhMTZ1eXdoMnl6ZDE5enk2YWw4aGNtcXVsaGNzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bfrlODgSLqXxS/giphy.gif"
+    alt="GIF"
+    style="width:100%;max-width:600px;border:none;border-radius:8px;">
+/SYSTEM
+	
+├── /HOME
+│   └── <a href="C:\Users\smari\OneDrive\HOME.html" target="_blank">🏠 Homepage</a>
+│   └── <a href="C:\Users\smari\OneDrive\HOME.html" target="_blank">🏠 Music </a>
+
+
+├── /SEARCH
+│   └── <a href="https://www.google.com/" target="_blank">Google Search</a>
+
+├── /MAC
+│
+├── /MEDIA
+│   └── <a href="https://photos.google.com/" target="_blank">Photos</a>
+│
+├── /GAMES
+│   └── <a href="https://www.friv.com/" target="_blank">Games</a>
+│
+├── /SYNC
+│   ├── Google Services
+│   │   ├── <a href="https://www.youtube.com/" target="_blank">▶️ YouTube</a>
+│   │   └── <a href="https://mail.google.com/" target="_blank">✉ Gmail</a>
+│   │
+│   └── APPS
+│       └── <a href="https://onlineboard.eu/b/YPWR1kbl" target="_blank">Quadro</a>
+│       └── <a href="https://chatgpt.com/" target="_blank"> I.a </a>
+        └── <a href="C:\Users\smari\OneDrive\HOME.html" target="_blank"> Music </a>
+├── /CHAT
+│   ├── Logins
+│   │   ├── Bill Gates
+│   │   └── Steve Jobs
+│   │   └── Servulo 
+│   │   └──	Fabio
+│   │   └── TATI 
+│   │   └── Ariani
+
+│
+└── /MUSIC
+    └── <a href="https://open.spotify.com/" target="_blank">🎵 Spotify</a>
+│
+└── /Radio 
+	<audio id="radio" controls>▶️
+    <source src="https://streams.deltaradio.de/101/mp3-192/streams.deltaradio.de/" type="audio/mpeg">
+</audio>
+</pre>
+
+</div>
+
+</body>
+
+<script>
+let radio = document.getElementById("radio");
+
+function tocarRadio(){
+    radio.play();
+}
+
+function pausarRadio(){
+    radio.pause();
+}
+</script>
+
+</html>
